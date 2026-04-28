@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry | Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <h1>Harry Batongbacal</h1>
+    <p>BSIT-SOUTH1 ITE399</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <button id="darkToggle" class="btn secondary">🌙 Dark Mode</button>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <div class="nav-links" id="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I build clean, modern, and user-friendly websites with strong UI/UX principles.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://picsum.photos/300/200?1">
+      <h3>Portfolio Website</h3>
+      <p>Responsive portfolio with modern UI.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/300/200?2">
+      <h3>UI Design</h3>
+      <p>Minimal and clean interface design.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form class="contact-form" onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Harry Batongbacal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
